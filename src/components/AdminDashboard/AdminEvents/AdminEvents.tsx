@@ -34,6 +34,7 @@ const AdminEvents: React.FC = () => {
             (res) => {
                 setEvents(res.data)
                 setLoading(false)
+                console.log(res.data[0].start)
             }
         )
     }
@@ -131,8 +132,8 @@ const AdminEvents: React.FC = () => {
                                 <CardContent>
                                     <img src={value.image_url} /><br />
                                     <CardDescription>
-                                        <b className='tw-text-primary'>Start: </b> {format(value.start, 'MMM do, yyyy @ h:mm a')} <br />
-                                        <b className='tw-text-primary'>End: </b> {format(value.end, 'MMM do, yyyy @ h:mm a')} <br />
+                                        <b className='tw-text-primary'>Start: </b> {format(new Date(value.start).getTime() - (-330 * 60000), 'MMM do, yyyy @ h:mm a')} <br />
+                                        <b className='tw-text-primary'>End: </b> {format(new Date(value.end).getTime() - (-330 * 60000), 'MMM do, yyyy @ h:mm a')} <br />
                                         <b className='tw-text-primary'>Round Details: </b> {view_list(value.round_details)}
                                         <b className='tw-text-primary'>Rules: </b> {view_list(value.rules)}
                                         <b className='tw-text-primary'>Special Notes: </b> {view_list(value.special_note)}
