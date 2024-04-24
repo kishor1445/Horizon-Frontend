@@ -1,0 +1,19 @@
+.gradient-text {
+    @apply tw-bg-gradient-to-tl tw-from-blue-400 tw-via-purple-500 tw-to-indigo-500;
+    @apply tw-text-transparent tw-bg-clip-text;
+    @apply tw-font-bold;
+}
+
+.link {
+    @apply hover:tw-text-sky-400;
+}
+
+/* chrome, safari and opera */
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-none {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}

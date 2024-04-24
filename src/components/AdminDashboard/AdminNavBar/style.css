@@ -1,0 +1,5 @@
+.logout_btn {
+    @apply tw-border-0 tw-p-0 tw-text-xl hover:tw-bg-transparent hover:tw-text-destructive/70 !important;
+    @apply tw-text-destructive;
+    @apply tw-whitespace-pre;
+}

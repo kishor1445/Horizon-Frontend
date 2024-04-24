@@ -1,0 +1,20 @@
+.login_form_input {
+    @apply tw-bg-transparent !important;
+    @apply tw-border-0 tw-rounded-none tw-border-b-2 !important;
+    @apply focus-visible:tw-ring-transparent focus:tw-ring-transparent !important;
+    @apply focus:tw-border-b-sky-500 focus:tw-transition-colors focus:tw-duration-500 !important;
+    @apply tw-px-9 !important;
+}
+
+.form_input_icon {
+    @apply tw-absolute;
+    @apply tw-translate-x-1 tw-translate-y-2;
+}
+
+.error-text {
+    @apply tw-text-destructive !important;
+}
+
+.error-input {
+    @apply tw-border-destructive !important;
+}
