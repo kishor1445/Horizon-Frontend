@@ -90,10 +90,6 @@ const AdminDashboard: React.FC = () => {
         setLoading(false);
     }
 
-    const reject_payment = async (data: Status) => {
-        console.log(data)
-    }
-
     useEffect(() => {
         adjust_N();
         window.addEventListener('resize', adjust_N);

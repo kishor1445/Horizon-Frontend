@@ -23,7 +23,7 @@ type EventProps = {
     data?: EventType
 }
 
-const Event: React.FC<EventProps> = () => {
+const Event: React.FC<EventProps> = ({ data }) => {
     const [Name, setName] = useState('');
     const [eventType, setEventType] = useState('');
     const [Description, setDescription] = useState('');
